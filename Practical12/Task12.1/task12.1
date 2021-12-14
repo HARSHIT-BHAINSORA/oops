@@ -70,6 +70,9 @@ public:
     {
         z = 70; // no error due to  protectly inher. by class C from Class A.
         y = 80;
+
+        cout << "E 's Update y = " << y << endl;
+        cout << "E 's Update z = " << z << endl;
     }
 };
 
@@ -96,6 +99,9 @@ int main()
 
     D objD;
     objD.displayD(); // x,y and z is inaccesible due to privately inhre.
+
+    E objE;
+    objE.displayE();
 
     return 0;
 }
