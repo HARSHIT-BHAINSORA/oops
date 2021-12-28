@@ -1,15 +1,14 @@
-// Read
+// write
 
 #include<iostream>
 #include<fstream>
+
 using namespace std;
 
 int main()
 {
-    ifstream myfile;
-    string data;
+    ofstream myfile;
     myfile.open("Demofile.txt");
-    myfile>>data;'
-    cout<<data<< endl;
-    return 0;
+    myfile<<"This is what a write in file... "<<endl;
+    myfile.close();
 }
