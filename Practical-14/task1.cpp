@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     ifstream myfile;
+    string data;
     myfile.open("Demofile.txt");
     myfile>>data;'
     cout<<data<< endl;
